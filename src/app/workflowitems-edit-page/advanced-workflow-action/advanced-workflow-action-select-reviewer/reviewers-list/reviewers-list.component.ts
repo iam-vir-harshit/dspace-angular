@@ -113,6 +113,10 @@ export class ReviewersListComponent extends MembersListComponent implements OnIn
       query: '',
     }));
   }
+  
+  searchCurrentMembersForm = this.formBuilder.group(({
+    queryCurrentMembers: '',
+  }));
 
   ngOnChanges(changes: SimpleChanges): void {
     this.groupId = changes.groupId.currentValue;
